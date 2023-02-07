@@ -1,0 +1,265 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* ####### */
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-desktop.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  max-width: 520px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: -0.520833px;
+  color: #ffffff;
+  margin-bottom: 21px;
+}
+
+.text p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.second-section .first-p {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.267857px;
+  color: #ffffff;
+  background: #5e54a4;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  padding: 17px 110px;
+  margin-bottom: 24px;
+}
+
+.second-section p span {
+  font-weight: 400;
+}
+
+form {
+  background: #ffffff;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  height: 474px;
+  width: 540px;
+  padding: 40px;
+}
+
+input {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 56px;
+  width: 460px;
+  padding-left: 32px;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid hsla(248, 33%, 49%, 1);
+}
+
+::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  color: #3d3b48;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+::placeholder:focus {
+  opacity: 1;
+}
+
+input[type="button"] {
+  color: white;
+  background: #38cc8b;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  padding-left: 0;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background: #77e2b3;
+}
+
+.last-p {
+  width: 100%;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 26px;
+  text-align: center;
+  color: #bab7d4;
+  margin: 0 auto;
+}
+
+a {
+  font-weight: 700;
+  color: #ff7979;
+  text-decoration: none;
+}
+/*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+  body {
+    /* padding: 90px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    padding-bottom: 50px;
+  }
+
+  main {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .text {
+    width: 327px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 88px;
+  }
+
+  .text p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+
+  .second-section .first-p {
+    padding: 18px 66px;
+  }
+
+  form {
+    width: 327px;
+  }
+
+  
+
+  input {
+    margin-bottom: 20px;
+    height: 56px;
+    width: 279px;
+    padding-left: 32px;
+    outline: none;
+  }
+}
+
+/*############ for-tablet-portrait-up ##############*/
+@media (min-width: 600px) {
+}
+
+/*############ for-tablet-landscape-up #############*/
+@media (min-width: 900px) {
+}
+
+/*############ for-desktop-up ###########*/
+@media (min-width: 1200px) {
+}
+
+/*############ for-big-desktop-up ##########*/
+@media (min-width: 1800px) {
+}
