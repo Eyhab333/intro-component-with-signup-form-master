@@ -169,7 +169,7 @@ a {
 .claim {
   font-size: 15px;
   font-weight: 500;
-  background: #38CC8B;
+  background: #38cc8b;
   color: hsl(0deg, 0%, 100%);
   text-transform: uppercase;
   cursor: pointer;
@@ -182,7 +182,7 @@ a {
 }
 
 .claim:hover {
-  background-color: #77E2B3;
+  background-color: #77e2b3;
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
 }
 
@@ -198,7 +198,7 @@ a {
   border-radius: 0.4rem;
   padding-left: 2rem;
   border: 1px solid hsl(246deg, 25%, 77%);
-  color: #3D3B48;
+  color: #3d3b48;
   font-weight: 500;
   font-size: 14px;
   outline: none;
@@ -221,7 +221,7 @@ a {
 .status {
   transition: all 0.5s ease-in-out;
   font-weight: 600;
-  color: #FF7979;
+  color: #ff7979;
   display: none;
   padding-left: 2rem;
   margin-top: 0;
@@ -248,7 +248,6 @@ a {
 .status-icon.alert {
   display: block;
 }
-
 
 /*##### for-phone-only ##########*/
 @media (max-width: 599px) {
@@ -294,26 +293,27 @@ a {
   }
 
   input {
-    margin-bottom: 20px;
-    height: 56px;
+    margin-bottom: 2px;
     width: 279px;
-    padding-left: 32px;
     outline: none;
+  }
+
+  .input-container {
+    height: 79px;
+  }
+
+  .trial-form {
+    height: 472px;
+  }
+
+  .claim {
+    padding: 15px;
+    background: #38cc8b;
+  }
+
+  .second-section .first-p,
+  form {
+    margin-left: 0;
   }
 }
 
-/*############ for-tablet-portrait-up ##############*/
-@media (min-width: 600px) {
-}
-
-/*############ for-tablet-landscape-up #############*/
-@media (min-width: 900px) {
-}
-
-/*############ for-desktop-up ###########*/
-@media (min-width: 1200px) {
-}
-
-/*############ for-big-desktop-up ##########*/
-@media (min-width: 1800px) {
-}
